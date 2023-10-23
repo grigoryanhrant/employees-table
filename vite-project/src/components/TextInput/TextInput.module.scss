@@ -1,0 +1,27 @@
+@import "../../shared/colors";
+
+.input {
+  width: 100%;
+  outline: none;
+  border: 1px solid #4A4A4A;
+  border-radius: 4px;
+  background-color: $background-color_1;
+  color: $color_1;
+  padding: 12px 8px;
+  font-size: 13px;
+
+  &::placeholder {
+    color: $color_1;
+    font-size: 13px;
+  }
+
+  &::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}

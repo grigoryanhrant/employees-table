@@ -1,0 +1,20 @@
+@import "shared/colors";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: $background-color_1;
+  font-family: sans-serif;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  display: flex;
+}

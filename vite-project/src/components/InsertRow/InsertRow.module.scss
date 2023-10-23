@@ -1,0 +1,42 @@
+@import "../../shared/colors";
+
+.insertRow {
+  padding: 14px 8px 8px 8px;
+  border: 1px solid #4A4A4A;
+  width: 300px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.insertRowTitle {
+  position: absolute;
+  top: 0;
+  left: 8px;
+  transform: translate(0, -50%);
+  background-color: $background-color_1;
+  color: $color_1;
+  font-size: 14px;
+}
+
+.insertRowGroup {
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+
+  &:last-child {
+    margin-bottom: unset;
+  }
+}
+
+.formSeparator {
+  width: 85%;
+  height: 1px;
+  background-color: $background-color_2;
+  margin: 0 auto 0 auto;
+}
+
+.settings {
+  width: 30px;
+  height: 40px;
+  background-color: $background-color_7;
+}

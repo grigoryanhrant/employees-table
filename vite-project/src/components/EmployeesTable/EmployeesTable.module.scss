@@ -1,0 +1,25 @@
+@import "../../shared/colors";
+
+.tableWrapper {
+    padding: 8px;
+    border: 1px solid $background-color_2;
+    width: 768px;
+    border-radius: 4px;
+    margin-left: 14px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th {
+        background-color: $th-color_1;
+        color: $color_1;
+        font-weight: 200;
+    }
+
+    td {
+        color: $color_1;
+        padding: 6px 0;
+    }
+}

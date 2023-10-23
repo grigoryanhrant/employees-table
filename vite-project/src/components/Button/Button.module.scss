@@ -1,0 +1,11 @@
+@import "../../shared/colors";
+
+.button {
+    width: 100%;
+    padding: 10px 0;
+    border-radius: 4px;
+    background-color: $background-color_7;
+    color: $color_1;
+    outline: none;
+    border: none;
+}
