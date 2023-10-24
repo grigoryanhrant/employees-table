@@ -1,0 +1,17 @@
+@import "../../shared/colors";
+
+.image {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+
+  svg {
+    fill: $th-color_1;
+  }
+}
+
+.image_light {
+  svg {
+    fill: $background-color_1;
+  }
+}

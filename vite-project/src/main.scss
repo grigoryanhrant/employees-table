@@ -7,14 +7,21 @@
   font-family: sans-serif;
 }
 
-body {
+.app {
+  width: 100%;
+  height: 100vh;
   background-color: $background-color_1;
-  font-family: sans-serif;
-  padding: 40px 0;
-  display: flex;
-  justify-content: center;
 }
 
-.app {
-  display: flex;
+.app-light {
+  background-color: $background-color_1_light;
 }
+
+.container {
+  padding: 40px 0;
+  max-width: 968px;
+  display: flex;
+  margin: 0 auto;
+}
+
+//#c5c5c5

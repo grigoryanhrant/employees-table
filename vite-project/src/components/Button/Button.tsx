@@ -1,16 +1,20 @@
 import styles from "./Button.module.scss";
+import {useContext} from "react";
+import {EmployeesContext, EmployeesContextType} from "../../context";
 
 type Props = {
     text: string;
-    onClick: () => void;
+    onClick: (() => void) | undefined
 }
 
-const Button = (props: Props) => {
+const Button = ({text, onClick}: Props) => {
 
-    const {text, onClick} = props;
+    const context = useContext<EmployeesContextType | null>(EmployeesContext);
+
+    const className = context?.lightMode ? `${styles.button} ${styles.button_light}` : styles.button;
 
     return (
-        <button type="button" className={styles.button} onClick={onClick}>
+        <button type="button" className={className} onClick={onClick}>
             {text}
         </button>
     );

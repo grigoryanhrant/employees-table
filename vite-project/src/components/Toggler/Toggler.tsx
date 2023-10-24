@@ -3,20 +3,20 @@ import "./Toggler.scss";
 
 type Props = {
     label: string;
-    onChange: () => void;
+    onChange: (() => void) | undefined;
+    id: string;
+    checked: boolean;
 }
 
-const Toggler = (props: Props) => {
-    const {label, onChange} = props;
-
+const Toggler = ({label, onChange, id, checked}: Props) => {
     return (
         <>
             <Toggle
-                defaultChecked={false}
                 icons={false}
-                id={"toggler"}
+                id={id}
+                checked={checked}
                 onChange={onChange}/>
-            <label className={"customCheckboxLabel"} htmlFor="toggler">{label}</label>
+            <label className={"customCheckboxLabel"} htmlFor={id}>{label}</label>
         </>
     );
 };

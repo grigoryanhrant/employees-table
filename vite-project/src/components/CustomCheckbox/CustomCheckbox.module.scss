@@ -57,3 +57,9 @@
   cursor: pointer;
   user-select: none;
 }
+
+.customCheckbox_light {
+  &:before {
+    background-color: $background-color_1_light;
+  }
+}

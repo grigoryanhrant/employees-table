@@ -2,10 +2,14 @@
 
 .insertRow {
   padding: 14px 8px 8px 8px;
-  border: 1px solid #4A4A4A;
+  border: 1px solid $background-color_2;
   width: 300px;
   border-radius: 4px;
   position: relative;
+}
+
+.insertRow_light {
+  border-color: $th-color_1;
 }
 
 .insertRowTitle {
@@ -16,6 +20,10 @@
   background-color: $background-color_1;
   color: $color_1;
   font-size: 14px;
+}
+
+.insertRowTitle_light {
+  background-color: $background-color_1-light;
 }
 
 .insertRowGroup {
